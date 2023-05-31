@@ -1,0 +1,92 @@
+// Importing necessary style files
+@import "../base/variables.scss";
+@import "../base/baseline.scss";
+
+// Styles for site footer
+.site-footer {
+  // Set padding and background image
+  padding: 2rem 0 3.5rem 0;
+  background-image: linear-gradient(#fff, #ececec);
+
+  // Styles for paragraphs inside the footer
+  p {
+    font-size: 0.9rem;
+  }
+
+  // Styles for footer headline
+  .headline {
+    color: #666;
+    margin-bottom: 0.33rem;
+  }
+
+  // Styles for links inside the footer
+  &__link {
+    color: #999;
+    text-decoration: none;
+  }
+
+  // Styles for links inside the footer when hovered over
+  &__link:hover {
+    color: $mainBlue;
+    text-decoration: underline;
+  }
+
+  // Styles for inner section of footer
+  &__inner {
+    border-top: 1px dotted #dedede;
+    padding-top: 3.5rem;
+  }
+
+  // Styles for first column of footer
+  &__col-one {
+    text-align: center;
+    @include atMedium {
+      text-align: left;
+      width: 33%;
+      float: left;
+    }
+  }
+
+  // Styles for group of second and third columns in footer
+  &__col-two-three-group {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto;
+    @include atMedium {
+      text-align: left;
+      float: left;
+      width: 42%;
+      margin: 0;
+    }
+  }
+
+  // Styles for second column in footer
+  &__col-two {
+    width: 50%;
+    float: left;
+  }
+
+  // Styles for third column in footer
+  &__col-three {
+    width: 50%;
+    float: left;
+  }
+
+  // Styles for fourth column in footer
+  &__col-four {
+    padding-top: 20px;
+    width: 85%;
+    margin: 0 auto;
+    clear: both;
+    text-align: center;
+    // Responsive styles for medium sized screens and up
+    @include atMedium {
+      padding-top: 0;
+      margin: 0;
+      clear: none;
+      text-align: left;
+      width: 25%;
+      float: right;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+// Import baseline styles
+@import "../base/baseline.scss";
+
+// Main navigation styling
+.main-navigation {
+  padding-top: 2px;
+
+  // Remove padding and margin from unordered list
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  // Clear floats
+  ul:before,
+  ul:after {
+    content: " ";
+    display: table;
+  }
+
+  ul:after {
+    clear: both;
+  }
+
+  // Style for medium-sized screens
+  @include atMedium {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+// Style for list items in main navigation
+.main-navigation li {
+  list-style: none;
+
+  // Style for medium-sized screens
+  @include atMedium {
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+// Styling for links in main navigation
+.main-navigation a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+  // Style for medium-sized screens
+  @include atMedium {
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+// Styling for current page in main navigation and hover state
+.main-navigation .current-menu-item a,
+.main-navigation a:hover {
+  color: $beige;
+}

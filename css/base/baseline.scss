@@ -1,0 +1,67 @@
+// This imports a Sass file that contains variable definitions.
+@import "./variables.scss";
+
+// This mixin defines a media query for small screens with a minimum width of 530px
+@mixin atSmall {
+  @media (min-width: 530px) {
+    // This includes any CSS code that is passed to the mixin as a parameter, inside the media query block.
+    @content;
+  }
+}
+
+// This mixin defines a media query for small to medium screens with a minimum width of 767px.
+@mixin atSmallMedium {
+  @media (min-width: 767px) {
+    // This includes any CSS code that is passed to the mixin as a parameter, inside the media query block.
+    @content;
+  }
+}
+
+// This mixin defines a media query for medium screens with a minimum width of 960p
+@mixin atMedium {
+  @media (min-width: 960px) {
+    // This includes any CSS code that is passed to the mixin as a parameter, inside the media query block.
+    @content;
+  }
+}
+
+// This sets some basic styling for the body of the webpage.
+body {
+  // This sets the text color to a dark gray.
+  color: #333;
+  // This sets the font family to Roboto with fallback to sans-serif.
+  font-family: "Roboto", sans-serif;
+  // This prevents horizontal scrolling caused by overflowing content.
+  overflow-x: hidden;
+  // This sets the positioning of the body to relative.
+  position: relative;
+}
+
+// This sets the maximum width of images to 100% and allows their height to scale automatically.
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// This sets the color of links to a blue color defined by the $mainBlue variable.
+a {
+  color: $mainBlue;
+}
+
+// This removes the underline text decoration when the user hovers over a link.
+a:hover {
+  text-decoration: none;
+}
+
+// This sets the margins for paragraphs, unordered lists, and ordered lists to 0 at the top and bottom, and 1.65em on the left and right.
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+// This sets the line height for paragraphs and list items to 1.65.
+p,
+li {
+  line-height: 1.65;
+}

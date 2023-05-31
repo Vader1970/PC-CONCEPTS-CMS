@@ -1,0 +1,118 @@
+// Importing styles from baseline.scss file
+@import "./baseline.scss";
+
+// Container class with max-width, horizontal centering, and relative positioning
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+// Narrow container variation with smaller max-width
+.container--narrow {
+  max-width: 960px;
+}
+
+// Section break with a 1px gray top border and margin
+.section-break {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2.5rem 0;
+}
+
+// Minimal list with no padding and margin
+.min-list {
+  padding: 0;
+  margin: 0;
+}
+
+// Remove bullets from list items
+.min-list li {
+  list-style: none;
+}
+
+// Padding classes for top and bottom
+.p-top-small {
+  padding-top: 1rem;
+}
+.p-top-large {
+  padding-top: 1.6rem;
+}
+.p-bottom-large {
+  padding-bottom: 1.6rem;
+}
+
+// Media query mixin for small screens with larger padding values
+@include atSmall {
+  .p-top-large {
+    padding-top: 3.5rem;
+  }
+  .p-bottom-large {
+    padding-bottom: 3.5rem;
+  }
+}
+
+// Class for removing margins
+.no-margin {
+  margin: 0;
+}
+
+// Class for removing underline from link
+.nu {
+  text-decoration: none;
+}
+
+// Class for underlined link on hover
+.nu:hover {
+  text-decoration: underline;
+}
+
+// Classes for text alignment
+.t-left {
+  text-align: left;
+}
+.t-right {
+  text-align: right;
+}
+.t-center {
+  text-align: center;
+}
+
+// Class for small font size
+.t-small {
+  font-size: 0.85rem;
+}
+
+// Classes for floating elements
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.push-right {
+  margin-right: 20px;
+}
+
+// Clearfix for container and group elements
+.container:before,
+.container:after,
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+
+// Clearfix continuation for container and group elements
+.container:after,
+.group:after {
+  clear: both;
+}
+
+// Class for hiding an element
+.hide {
+  display: none;
+}

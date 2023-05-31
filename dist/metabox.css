@@ -1,0 +1,80 @@
+/* Importing variable.scss for access to variable values */
+/* Style for metabox container */
+.metabox {
+  /* Setting background color to beige */
+  background-color: #faf0ca;
+  /* Adding border radius of 3px */
+  border-radius: 3px;
+  /* Adding padding of 10px on top and bottom and 15px on left and right */
+  padding: 10px 15px;
+  /* Displaying as inline-block */
+  display: inline-block;
+  /* Adding margin at bottom of 30px */
+  margin-bottom: 30px;
+  /* Adding box shadow with 2px horizontal and vertical offset, 1px blur radius and 0.07 alpha value */
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.07);
+  /* Style for metabox container with --position-up modifier */
+  /* Style for metabox container with --with-home-link modifier */
+  /* Style for main content area of metabox container */
+  /* Style for paragraphs inside metabox */
+  /* Style for links inside metabox */
+  /* Style for links inside metabox on hover */
+  /* Style for blog home link inside metabox */
+  /* Style for blog home link inside metabox on hover */
+}
+.metabox--position-up {
+  /* Positioning at top of parent element */
+  position: absolute;
+  /* Setting top value to 0 */
+  top: 0;
+  /* Translating element up by 50% of its own height */
+  transform: translateY(-50%);
+}
+.metabox--with-home-link {
+  /* Removing padding */
+  padding: 0;
+}
+.metabox__main {
+  /* Adding padding of 10px on top, 15px on right and left, and 11px on bottom */
+  padding: 10px 15px 10px 11px;
+}
+.metabox p {
+  /* Removing margin */
+  margin: 0;
+  /* Setting font size to 0.9rem */
+  font-size: 0.875rem;
+  /* Setting color to a shade of beige with decreased lightness and saturation values */
+  color: #a79038;
+}
+.metabox a {
+  /* Setting color to a shade of beige with decreased lightness and saturation values */
+  color: #a79038;
+  /* Removing underline from links */
+  text-decoration: none;
+  /* Setting font weight to bold */
+  font-weight: bold;
+}
+.metabox a:hover {
+  /* Adding underline on hover */
+  text-decoration: underline;
+}
+.metabox .metabox__blog-home-link {
+  /* Setting background color to main blue */
+  background-color: #0d3b66;
+  /* Setting text color to white */
+  color: #fff;
+  /* Displaying as inline-block */
+  display: inline-block;
+  /* Adding padding of 10px on top and bottom and 15px on left and right */
+  padding: 10px 15px;
+  /* Adding border radius of 3px on top left and bottom left corners */
+  border-radius: 3px 0 0 3px;
+  /* Setting font weight to normal */
+  font-weight: normal;
+}
+.metabox .metabox__blog-home-link:hover {
+  /* Removing underline on hover */
+  text-decoration: none;
+  /* Darkening background color on hover */
+  background-color: #0a2e4f;
+}/*# sourceMappingURL=metabox.css.map */

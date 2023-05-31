@@ -1,0 +1,28 @@
+// Import variables from another file
+@import "../base/variables.scss";
+
+// Style the link list
+.link-list {
+  li {
+    // Add padding and set font size for each list item
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    // Add a dotted bottom border to each list item, except for the last one
+    border-bottom: 1px dotted #dedede;
+
+    // When the .search-overlay class is applied to a parent element, adjust the font size of the list item
+    .search-overlay & {
+      font-size: 1.3rem;
+    }
+  }
+
+  // Remove the bottom border from the last list item
+  li:last-child {
+    border-bottom: none;
+  }
+
+  // Set the color of the links to the value of the $darkOrange variable
+  a {
+    color: $darkOrange;
+  }
+}

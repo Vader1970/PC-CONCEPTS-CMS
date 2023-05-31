@@ -1,0 +1,17 @@
+/* Defines the style for a map container element */
+.acf-map {
+  /* Set the width of the map container to 100% of its parent element */
+  width: 100%;
+  /* Set the height of the map container to 400 pixels */
+  height: 400px;
+  /* Add a 1-pixel solid border with the color #ccc to the map container */
+  border: #ccc solid 1px;
+  /* Add a 20-pixel margin to the top and bottom of the map container */
+  margin: 20px 0;
+}
+
+/* Fixes potential theme css conflict */
+.acf-map img {
+  /* Set the maximum width of the images within the map container to inherit from their parent element (rather than being limited by their own width) and override any other CSS styles that might be affecting it */
+  max-width: inherit !important;
+}

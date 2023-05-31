@@ -1,0 +1,12 @@
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  padding: 0;
+  align-items: center;
+}
+
+.service-image {
+  margin: 0;
+  padding: 0;
+}/*# sourceMappingURL=service-card.css.map */

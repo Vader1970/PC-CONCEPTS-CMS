@@ -1,0 +1,128 @@
+// Import variables and baseline from base directory
+@import "../base/variables.scss";
+@import "../base/baseline.scss";
+
+// Define styles for .btn class
+.btn {
+  // Set element display, cursor, border radius, overflow, text decoration, color, font size, and padding
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.19rem;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+  // Define styles for .btn--small modifier
+  &--small {
+    font-size: 0.88rem;
+    padding: 7px 13px;
+    font-weight: 300;
+  }
+
+  // Define styles for .btn--with-photo modifier
+  &--with-photo {
+    padding-left: 40px;
+    position: relative;
+  }
+
+  // Define styles for .btn--orange modifier
+  &--orange {
+    background-color: $lightOrange;
+  }
+
+  // Define styles for .btn--orange:hover modifier
+  &--orange:hover {
+    background: linear-gradient($lightOrange, scale-color($lightOrange, $lightness: -25%, $saturation: 100%));
+  }
+
+  // Define styles for .btn--dark-orange modifier
+  &--dark-orange {
+    background-color: $darkOrange;
+  }
+
+  // Define styles for .btn--dark-orange:hover modifier
+  &--dark-orange:hover {
+    background: linear-gradient($darkOrange, scale-color($darkOrange, $lightness: -35%, $saturation: 100%));
+  }
+
+  // Define styles for .btn--blue modifier
+  &--blue {
+    background-color: $mainBlue;
+  }
+
+  // Define styles for .btn--blue:hover modifier
+  &--blue:hover {
+    background: linear-gradient(scale-color($mainBlue, $lightness: 11%), $mainBlue);
+  }
+
+  // Define styles for .btn--blue modifier
+  &--light-blue {
+    background-color: $lightBlue;
+  }
+
+  // Define styles for .btn--blue:hover modifier
+  &--light-blue:hover {
+    background: linear-gradient(scale-color($lightBlue, $lightness: 11%), $lightBlue);
+  }
+
+  // Define styles for .btn--yellow modifier
+  &--yellow {
+    background-color: $mainYellow;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+  }
+
+  // Define styles for .btn--yellow:hover modifier
+  &--yellow:hover {
+    background: linear-gradient($mainYellow, scale-color($mainYellow, $lightness: -29%, $saturation: 100%));
+  }
+
+  // Define styles for .btn--beige modifier
+  &--beige {
+    background-color: $beige;
+    color: #173f58;
+  }
+
+  // Define styles for .btn--beige:hover modifier
+  &--beige:hover {
+    background-color: $mainYellow;
+  }
+
+  // Define styles for .btn--gray modifier
+  &--gray {
+    background-color: #222;
+  }
+
+  // Define styles for .btn--white modifier
+  &--white {
+    background-color: #fff;
+    color: #173f58;
+  }
+
+  // Define styles for .btn--white:hover modifier
+  &--white:hover {
+    background-color: #ddd;
+  }
+
+  // Define styles for .btn--large modifier
+  &--large {
+    font-size: 1.3rem;
+    padding: 16px 34px;
+    border-radius: 7px;
+    @include atSmall {
+      font-size: 1.9rem;
+    }
+  }
+
+  // Set font size for small screens
+  &--inactive {
+    background-color: transparent;
+    cursor: default;
+    color: #333;
+  }
+}

@@ -1,0 +1,129 @@
+// Importing variables and baseline styles from other files
+@import "../base/variables.scss";
+@import "../base/baseline.scss";
+
+/* Styles for site header */
+.site-header {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+
+  /* Styles for avatar image */
+  &__avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__avatar img {
+    display: block;
+    width: 30px;
+    height: 30px;
+  }
+
+  /* Styles for header menu */
+  &__menu {
+    visibility: hidden;
+    position: absolute;
+    background-color: adjust-color($mainBlue, $alpha: -0.11, $lightness: -1%);
+    left: 0;
+    right: 0;
+    top: -20px;
+    padding-top: 58px;
+    opacity: 0;
+    transform: translateY(-20%);
+    transition: opacity 0.3s ease-out, visibility 0.3s ease-out, transform 0.3s ease-out;
+    padding-bottom: 20px;
+
+    /* Styles for active header menu */
+    &--active {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+    }
+
+    /* Styles for header menu at medium size */
+    @include atMedium {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0) scale(1);
+      position: static;
+      background-color: transparent;
+      float: right;
+      padding-top: 0;
+      padding-bottom: 0;
+      top: 0;
+    }
+  }
+
+  /* Styles for search trigger */
+  &__search-trigger {
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 6px;
+    right: 16px;
+
+    /* Styles for search trigger at small size */
+    @include atSmall {
+      top: 4px;
+      font-size: 1.4rem;
+    }
+
+    /* Hide search trigger at medium size */
+    @include atMedium {
+      display: none;
+    }
+  }
+
+  /* Styles for menu trigger */
+  &__menu-trigger {
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    z-index: 10;
+    top: 7px;
+    right: 46px;
+
+    /* Styles for menu trigger at small size */
+    @include atSmall {
+      top: 5px;
+      font-size: 1.4rem;
+    }
+
+    /* Hide menu trigger at medium size */
+    @include atMedium {
+      display: none;
+    }
+  }
+
+  /* Styles for utility links */
+  &__util {
+    padding: 0 0 0 20px;
+
+    /* Styles for utility links at medium size */
+    @include atMedium {
+      padding: 0;
+      float: right;
+    }
+  }
+
+  /* Styles for header buttons */
+  &__btn {
+    margin-right: 20px;
+    /* Styles for header buttons at medium size */
+    @include atMedium {
+      float: left;
+    }
+  }
+
+  /* Styles for buttons with photos */
+  .btn--with-photo {
+    margin-right: 0;
+  }
+}

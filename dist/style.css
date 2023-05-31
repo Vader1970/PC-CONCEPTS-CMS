@@ -1,0 +1,1958 @@
+/* 3rd party packages */
+@import "normalize.css";
+@import "../node_modules/@glidejs/glide/dist/css/glide.core.min.css";
+/* SASS and Global'ish Stuff */
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 16px;
+  position: relative;
+}
+
+.container--narrow {
+  max-width: 960px;
+}
+
+.section-break {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 2.5rem 0;
+}
+
+.min-list {
+  padding: 0;
+  margin: 0;
+}
+
+.min-list li {
+  list-style: none;
+}
+
+.p-top-small {
+  padding-top: 1rem;
+}
+
+.p-top-large {
+  padding-top: 1.6rem;
+}
+
+.p-bottom-large {
+  padding-bottom: 1.6rem;
+}
+
+@media (min-width: 530px) {
+  .p-top-large {
+    padding-top: 3.5rem;
+  }
+  .p-bottom-large {
+    padding-bottom: 3.5rem;
+  }
+}
+.no-margin {
+  margin: 0;
+}
+
+.nu {
+  text-decoration: none;
+}
+
+.nu:hover {
+  text-decoration: underline;
+}
+
+.t-left {
+  text-align: left;
+}
+
+.t-right {
+  text-align: right;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.t-small {
+  font-size: 0.85rem;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.push-right {
+  margin-right: 20px;
+}
+
+.container:before,
+.container:after,
+.group:before,
+.group:after {
+  content: " ";
+  display: table;
+}
+
+.container:after,
+.group:after {
+  clear: both;
+}
+
+.hide {
+  display: none;
+}
+
+/* BEM Blocks */
+/* Import the baseline.scss file */
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+/* Styles for a block with a gray background and centered text */
+.our-placeholder-block {
+  padding: 20px;
+  text-align: center;
+  font-size: 1.65rem;
+  background: linear-gradient(180deg, #dedede, #adadad);
+}
+
+/* Styles for a page section */
+.page-section {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  /* Styles for small screens */
+  /* Styles for a page section with a white background */
+  /* Styles for a page section with a beige background */
+  /* Styles for the last paragraph within a page section */
+}
+@media (min-width: 530px) {
+  .page-section {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    margin-top: 10px;
+  }
+}
+.page-section--white {
+  background-color: #fff;
+}
+.page-section--beige {
+  background-color: #faf0ca;
+}
+.page-section p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Styles for the text in the PC logo */
+.pc-logo-text {
+  position: relative;
+  z-index: 20;
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 100;
+}
+
+/* Styles for the strong tag within the PC logo text */
+.pc-logo-text strong {
+  font-weight: 400;
+}
+
+/* Styles for links within the PC logo text */
+.pc-logo-text a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Styles for links within the PC logo text when the logo is an alternative color */
+.pc-logo-text--alt-color a {
+  color: #fff;
+}
+
+/* Styles for links within the PC logo text on hover */
+.pc-logo-text a:hover {
+  color: #faf0ca;
+  text-decoration: none;
+}
+
+/* Keyframe animation for a spinner */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/* Styles for a spinner */
+.spinner-loader {
+  margin-top: 45px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  border: 0.25rem solid rgba(0, 0, 0, 0.2);
+  border-top-color: black;
+  animation: spin 1s infinite linear;
+}
+
+/* Styles for text with a dark orange color */
+.c-orange {
+  color: #f95738;
+}
+
+/* Styles for text with a main blue color */
+.c-blue {
+  color: #0d3b66;
+}
+
+/* Styles for white text */
+.c-white {
+  color: #fff;
+}
+
+/* Styles for dark text */
+.c-dark {
+  color: #333;
+}
+
+/* Styles for gray text */
+.gray {
+  color: #999999;
+}
+
+/* Hide the search trigger and style its position */
+.search-trigger {
+  /* hide the element */
+  display: none;
+  color: #fff;
+  /* set position to relative to use "top" property */
+  position: relative;
+  cursor: pointer;
+  /* adjust its position */
+  top: 1px;
+  margin-left: 20px;
+  /* use media query mixin to show the element on medium screens */
+}
+@media (min-width: 960px) {
+  .search-trigger {
+    display: inline-block;
+    top: 6px;
+  }
+}
+
+/* Style the search trigger on hover */
+.search-trigger:hover {
+  opacity: 0.65;
+}
+
+/* Style the social media icons */
+.social-icons-list {
+  display: flex;
+  margin: 0 -8px;
+}
+
+.social-icons-list li {
+  flex: 1;
+  margin: 0 8px;
+}
+
+.social-icons-list li a {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-size: 1.25rem;
+}
+
+.social-icons-list li a:hover {
+  opacity: 0.75;
+}
+
+/* Define the background color for each social media icon */
+.social-color-facebook {
+  background-color: #4862a3;
+}
+
+.social-color-twitter {
+  background-color: #55acee;
+}
+
+.social-color-youtube {
+  background-color: #cc1e1f;
+}
+
+.social-color-linkedin {
+  background-color: #0077b5;
+}
+
+.social-color-instagram {
+  background-color: #d8226b;
+}
+
+/* Reset the default styling for navigation lists */
+.nav-list ul {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li {
+  list-style: none;
+}
+
+/* Style the links in the navigation list */
+.nav-list a {
+  font-size: 0.9rem;
+  color: #999;
+  text-decoration: none;
+}
+
+/* change the link color on hover */
+.nav-list a:hover {
+  color: #0d3b66;
+  text-decoration: underline;
+}
+
+/* Define padding for different column sizes */
+.one-half,
+.one-third,
+.one-fourth,
+.one-fifth,
+.one-sixth {
+  padding-bottom: 1.6rem;
+}
+
+/* Use media query mixin to adjust column sizes on medium screens */
+@media (min-width: 960px) {
+  .row {
+    margin-right: -50px;
+  }
+  .one-half,
+  .one-third,
+  .two-thirds,
+  .one-fourth,
+  .one-fifth,
+  .one-sixth {
+    padding-bottom: 0;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 50px;
+  }
+  .two-thirds {
+    width: 66.66%;
+  }
+  .one-half {
+    width: 50%;
+  }
+  .one-third {
+    width: 33.33%;
+  }
+  .one-quarter {
+    width: 25%;
+  }
+  .one-fifth {
+    width: 20%;
+  }
+  .one-sixth {
+    width: 16.66%;
+  }
+}
+/* Make Top WP Admin Bar Fixed on Mobile */
+@media screen and (max-width: 600px) {
+  #wpadminbar {
+    position: fixed;
+  }
+}
+/* Seach Form */
+/* Style the search form */
+.search-form {
+  background-color: #dedede;
+  padding: 20px;
+  text-align: center;
+}
+
+.search-form label {
+  display: block;
+}
+
+.search-form-row {
+  display: flex;
+}
+
+.search-form .s {
+  min-width: 20px;
+  flex-basis: auto;
+  flex-grow: 1;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
+@media (min-width: 530px) {
+  .search-form .s {
+    font-size: 1.4rem;
+  }
+}
+
+.search-submit {
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  background-color: #0d3b66;
+  font-family: "Roboto", sans-serif;
+  padding: 0 20px;
+  margin-left: 10px;
+}
+
+/* Add a margin to all images */
+img {
+  margin-top: 2.5rem;
+}
+
+/* A horizontal line separator */
+hr {
+  max-width: 1200px;
+  opacity: 0.4;
+}
+
+.image-shadow {
+  width: 100%;
+  padding: 10px;
+  margin-top: 60px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.5);
+  transform: translateZ(0) scale(1.1);
+}
+
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.19rem;
+  padding: 12px 24px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.btn--small {
+  font-size: 0.88rem;
+  padding: 7px 13px;
+  font-weight: 300;
+}
+.btn--with-photo {
+  padding-left: 40px;
+  position: relative;
+}
+.btn--orange {
+  background-color: #ee964b;
+}
+.btn--orange:hover {
+  background: linear-gradient(#ee964b, #eb6c00);
+}
+.btn--dark-orange {
+  background-color: #f95738;
+}
+.btn--dark-orange:hover {
+  background: linear-gradient(#f95738, #c62000);
+}
+.btn--blue {
+  background-color: #0d3b66;
+}
+.btn--blue:hover {
+  background: linear-gradient(#12518d, #0d3b66);
+}
+.btn--light-blue {
+  background-color: #5c7cfa;
+}
+.btn--light-blue:hover {
+  background: linear-gradient(#6e8afb, #5c7cfa);
+}
+.btn--yellow {
+  background-color: #f4d35e;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+}
+.btn--yellow:hover {
+  background: linear-gradient(#f4d35e, #f0bb00);
+}
+.btn--beige {
+  background-color: #faf0ca;
+  color: #173f58;
+}
+.btn--beige:hover {
+  background-color: #f4d35e;
+}
+.btn--gray {
+  background-color: #222;
+}
+.btn--white {
+  background-color: #fff;
+  color: #173f58;
+}
+.btn--white:hover {
+  background-color: #ddd;
+}
+.btn--large {
+  font-size: 1.3rem;
+  padding: 16px 34px;
+  border-radius: 7px;
+}
+@media (min-width: 530px) {
+  .btn--large {
+    font-size: 1.9rem;
+  }
+}
+.btn--inactive {
+  background-color: transparent;
+  cursor: default;
+  color: #333;
+}
+
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+/* Styles for site header */
+.site-header {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  /* Styles for avatar image */
+  /* Styles for header menu */
+  /* Styles for search trigger */
+  /* Styles for menu trigger */
+  /* Styles for utility links */
+  /* Styles for header buttons */
+  /* Styles for buttons with photos */
+}
+.site-header__avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.site-header__avatar img {
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+.site-header__menu {
+  visibility: hidden;
+  position: absolute;
+  background-color: rgba(12, 56, 97, 0.89);
+  left: 0;
+  right: 0;
+  top: -20px;
+  padding-top: 58px;
+  opacity: 0;
+  transform: translateY(-20%);
+  transition: opacity 0.3s ease-out, visibility 0.3s ease-out, transform 0.3s ease-out;
+  padding-bottom: 20px;
+  /* Styles for active header menu */
+  /* Styles for header menu at medium size */
+}
+.site-header__menu--active {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+}
+@media (min-width: 960px) {
+  .site-header__menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    position: static;
+    background-color: transparent;
+    float: right;
+    padding-top: 0;
+    padding-bottom: 0;
+    top: 0;
+  }
+}
+.site-header__search-trigger {
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.2rem;
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  /* Styles for search trigger at small size */
+  /* Hide search trigger at medium size */
+}
+@media (min-width: 530px) {
+  .site-header__search-trigger {
+    top: 4px;
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 960px) {
+  .site-header__search-trigger {
+    display: none;
+  }
+}
+.site-header__menu-trigger {
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  position: absolute;
+  z-index: 10;
+  top: 7px;
+  right: 46px;
+  /* Styles for menu trigger at small size */
+  /* Hide menu trigger at medium size */
+}
+@media (min-width: 530px) {
+  .site-header__menu-trigger {
+    top: 5px;
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 960px) {
+  .site-header__menu-trigger {
+    display: none;
+  }
+}
+.site-header__util {
+  padding: 0 0 0 20px;
+  /* Styles for utility links at medium size */
+}
+@media (min-width: 960px) {
+  .site-header__util {
+    padding: 0;
+    float: right;
+  }
+}
+.site-header__btn {
+  margin-right: 20px;
+  /* Styles for header buttons at medium size */
+}
+@media (min-width: 960px) {
+  .site-header__btn {
+    float: left;
+  }
+}
+.site-header .btn--with-photo {
+  margin-right: 0;
+}
+
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+.site-footer {
+  padding: 2rem 0 3.5rem 0;
+  background-image: linear-gradient(#fff, #ececec);
+}
+.site-footer p {
+  font-size: 0.9rem;
+}
+.site-footer .headline {
+  color: #666;
+  margin-bottom: 0.33rem;
+}
+.site-footer__link {
+  color: #999;
+  text-decoration: none;
+}
+.site-footer__link:hover {
+  color: #0d3b66;
+  text-decoration: underline;
+}
+.site-footer__inner {
+  border-top: 1px dotted #dedede;
+  padding-top: 3.5rem;
+}
+.site-footer__col-one {
+  text-align: center;
+}
+@media (min-width: 960px) {
+  .site-footer__col-one {
+    text-align: left;
+    width: 33%;
+    float: left;
+  }
+}
+.site-footer__col-two-three-group {
+  text-align: center;
+  width: 85%;
+  margin: 0 auto;
+}
+@media (min-width: 960px) {
+  .site-footer__col-two-three-group {
+    text-align: left;
+    float: left;
+    width: 42%;
+    margin: 0;
+  }
+}
+.site-footer__col-two {
+  width: 50%;
+  float: left;
+}
+.site-footer__col-three {
+  width: 50%;
+  float: left;
+}
+.site-footer__col-four {
+  padding-top: 20px;
+  width: 85%;
+  margin: 0 auto;
+  clear: both;
+  text-align: center;
+}
+@media (min-width: 960px) {
+  .site-footer__col-four {
+    padding-top: 0;
+    margin: 0;
+    clear: none;
+    text-align: left;
+    width: 25%;
+    float: right;
+  }
+}
+
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+.main-navigation {
+  padding-top: 2px;
+}
+.main-navigation ul {
+  padding: 0;
+  margin: 0;
+}
+.main-navigation ul:before,
+.main-navigation ul:after {
+  content: " ";
+  display: table;
+}
+.main-navigation ul:after {
+  clear: both;
+}
+@media (min-width: 960px) {
+  .main-navigation {
+    float: left;
+    margin-right: 20px;
+  }
+}
+
+.main-navigation li {
+  list-style: none;
+}
+@media (min-width: 960px) {
+  .main-navigation li {
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+.main-navigation a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 300;
+}
+@media (min-width: 960px) {
+  .main-navigation a {
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+.main-navigation .current-menu-item a,
+.main-navigation a:hover {
+  color: #faf0ca;
+}
+
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+.page-banner {
+  background-color: #000;
+  padding: 80px 0 40px 0;
+  position: relative;
+  min-height: 250px;
+}
+@media (min-width: 530px) {
+  .page-banner {
+    padding: 130px 0 60px 0;
+  }
+}
+.page-banner__content {
+  position: relative;
+  z-index: 2;
+}
+.page-banner__title {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 3.6rem;
+  margin: 0 0 1rem 0;
+  color: #fff;
+}
+@media (min-width: 530px) {
+  .page-banner__title {
+    font-size: 5rem;
+  }
+}
+.page-banner__bg-image {
+  opacity: 0.85;
+  background-size: cover;
+  background-position: center center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.page-banner__intro {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.3;
+  color: #ededed;
+}
+@media (min-width: 530px) {
+  .page-banner__intro {
+    font-size: 1.65rem;
+  }
+}
+.page-banner__intro p {
+  margin: 0;
+}
+
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+.hero-slider {
+  position: relative;
+  margin-top: 20px;
+}
+.hero-slider div {
+  outline: none;
+}
+.hero-slider__interior {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media (min-width: 960px) {
+  .hero-slider__interior {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+.hero-slider__slide {
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero-slider__overlay {
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.68);
+  padding: 40px;
+  color: #fff;
+}
+@media (min-width: 960px) {
+  .hero-slider__overlay {
+    width: 50%;
+  }
+}
+
+.slick-dots {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  top: 15px;
+}
+@media (min-width: 960px) {
+  .slick-dots {
+    top: 50px;
+  }
+}
+
+.slick-dots li {
+  list-style: none;
+  display: inline;
+}
+.slick-dots li button {
+  display: inline-block;
+  text-indent: -9999px;
+  font-size: 0;
+  line-height: 0;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  border: none;
+  margin: 0 4px;
+  padding: 0;
+  outline: none;
+  transition: background-color 0.3s ease-out;
+  cursor: pointer;
+}
+.slick-dots .slick-active button {
+  background-color: #fff;
+}
+
+/* GlideJS */
+.glide__bullets {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  top: 15px;
+}
+@media (min-width: 960px) {
+  .glide__bullets {
+    top: 50px;
+  }
+}
+.glide__bullets button {
+  display: inline-block;
+  text-indent: -9999px;
+  font-size: 0;
+  line-height: 0;
+  width: 10px;
+  height: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 50%;
+  border: none;
+  margin: 0 3px;
+  padding: 0;
+  outline: none;
+  transition: background-color 0.3s ease-out;
+  cursor: pointer;
+}
+.glide__bullets button.glide__bullet--active {
+  background-color: #fff;
+}
+
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+.search-overlay {
+  /* Set overflow properties for scrolling */
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* Set positioning and size properties */
+  z-index: 110;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* Set background color, visibility, opacity, and transition */
+  background-color: rgba(255, 255, 255, 0.96);
+  visibility: hidden;
+  opacity: 0;
+  transform: scale(1.09);
+  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+  box-sizing: border-box;
+  /* Set padding for paragraphs */
+  /* Override padding for summary paragraphs */
+  /* Set margins for event summary container */
+  /* Set positioning for admin bar */
+  /* Styles for the top section of the overlay */
+  /* Styles for search icon */
+  /* Styles for the active overlay */
+  /* Styles for the section title */
+  /* Styles for the close button */
+  /* Hover styles for the close button */
+  /* Styles for the one-half container */
+}
+.search-overlay p {
+  padding-top: 15px;
+}
+.search-overlay .event-summary p {
+  padding-top: 0;
+}
+.search-overlay .event-summary {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+body.admin-bar .search-overlay {
+  top: 32px;
+}
+.search-overlay__top {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+.search-overlay__icon {
+  margin-right: 10px;
+  font-size: 1.8rem;
+  color: #f95738;
+}
+@media (min-width: 960px) {
+  .search-overlay__icon {
+    font-size: 2.5rem;
+  }
+}
+.search-overlay--active {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+.search-overlay__section-title {
+  margin: 30px 0 1px 0;
+  font-weight: 400;
+  color: #0d3b66;
+  font-size: 2rem;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+.search-overlay__close {
+  position: absolute;
+  top: 13px;
+  right: 16px;
+  font-size: 2.1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  background-color: #fff;
+  color: #f95738;
+  line-height: 0.7;
+}
+@media (min-width: 530px) {
+  .search-overlay__close {
+    top: 18px;
+    font-size: 2.1rem;
+  }
+}
+@media (min-width: 960px) {
+  .search-overlay__close {
+    top: 26px;
+    font-size: 2.8rem;
+  }
+}
+.search-overlay__close:hover {
+  opacity: 1;
+}
+.search-overlay .one-half {
+  padding-bottom: 0;
+}
+
+/* Styles for the search term input */
+.search-term {
+  width: 75%;
+  box-sizing: border-box;
+  border: none;
+  padding: 15px 0;
+  margin: 0;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: 300;
+  outline: none;
+  color: #f95738;
+}
+@media (min-width: 530px) {
+  .search-term {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 960px) {
+  .search-term {
+    width: 80%;
+    font-size: 3rem;
+  }
+}
+
+.body-no-scroll {
+  overflow: hidden;
+}
+
+.tutor-cards {
+  margin: 0;
+  padding: 0;
+}
+.search-overlay .tutor-cards {
+  padding-top: 21px;
+}
+
+.tutor-card {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  margin-right: 15px;
+  background-color: #f95738;
+  overflow: hidden;
+}
+.search-overlay .tutor-card {
+  width: 180px;
+}
+.tutor-card__image {
+  display: block;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+}
+.tutor-card:hover .tutor-card__image {
+  opacity: 0.8;
+  transform: scale(1.1) rotate(4deg);
+}
+.tutor-card__name {
+  font-weight: 300;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  right: 0;
+  padding: 3px 10px;
+  background-color: rgba(240, 54, 19, 0.85);
+}
+.tutor-card:hover .tutor-card__name {
+  background-color: rgba(215, 46, 14, 0.85);
+}
+.tutor-card__list-item {
+  display: inline-block;
+  list-style: none;
+}
+
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  padding: 0;
+  align-items: center;
+}
+
+.service-image {
+  margin: 0;
+  padding: 0;
+}
+
+.homepage-services-layout {
+  /* Uses the grid display property */
+  display: grid;
+  /* Sets 2 columns with equal width */
+  grid-template-columns: repeat(2, 1fr);
+  /* Automatically sizes rows based on content */
+  grid-template-rows: auto;
+  /* Limits the maximum width of the grid */
+  max-width: 1200px;
+  /* Centers the grid horizontally within its container */
+  margin-inline: auto;
+  /* Adds a 2-rem gap between grid items */
+  gap: 2rem;
+  /* New styles for 3D effect */
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.homepage-services-layout > * {
+  /* Apply 3D effect to each grid item */
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  padding: 10px;
+  box-sizing: border-box;
+  transform: translateZ(30px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  /* Switches to a single column layout */
+  .homepage-services-layout {
+    grid-template-columns: 1fr;
+    /* Automatically sizes rows based on content */
+    grid-template-rows: auto;
+  }
+}
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+.headline {
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+}
+.headline--large {
+  font-size: 3.6rem;
+}
+@media (min-width: 530px) {
+  .headline--large {
+    font-size: 6.25rem;
+  }
+}
+.headline--large-medium {
+  font-size: 5rem;
+  margin: 0 0 1rem 0;
+}
+.headline--medium {
+  font-size: 1.9rem;
+  margin-bottom: 0.75rem;
+}
+@media (min-width: 530px) {
+  .headline--medium {
+    font-size: 3.125rem;
+  }
+}
+.headline--small-plus {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.6875rem;
+  font-weight: 400;
+  margin-top: 2.5rem;
+  margin-bottom: 0.9rem;
+}
+.headline--small {
+  font-size: 1.2rem;
+}
+@media (min-width: 530px) {
+  .headline--small {
+    font-size: 1.6875rem;
+    margin-top: 2.5rem;
+  }
+}
+.headline--smaller {
+  font-size: 1.5rem;
+}
+.headline--tiny {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3875rem;
+  margin-bottom: 0.625rem;
+}
+.headline--post-title a {
+  color: #0d3b66;
+  text-decoration: none;
+}
+.headline--post-title a:hover {
+  text-decoration: underline;
+}
+
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+.generic-content p,
+.generic-content li {
+  font-size: 1.15rem;
+}
+.generic-content blockquote,
+.generic-content blockquote p {
+  font-size: 1.5rem;
+  font-style: italic;
+}
+.generic-content h1,
+.generic-content h2,
+.generic-content h3,
+.generic-content h4,
+.generic-content h5,
+.generic-content h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.generic-content h1 {
+  font-size: 3.6rem;
+}
+.generic-content h2 {
+  font-size: 3.1rem;
+}
+.generic-content h3 {
+  font-size: 2.6rem;
+}
+.generic-content h4 {
+  font-size: 2.1rem;
+}
+.generic-content h5 {
+  font-size: 1.6rem;
+}
+.generic-content h6 {
+  font-size: 1.15rem;
+}
+@media (min-width: 530px) {
+  .generic-content h1 {
+    font-size: 6.25rem;
+  }
+  .generic-content h2 {
+    font-size: 5rem;
+  }
+  .generic-content h3 {
+    font-size: 3.125rem;
+  }
+  .generic-content h4 {
+    font-size: 2.4rem;
+  }
+  .generic-content h5 {
+    font-size: 1.9rem;
+  }
+  .generic-content h6 {
+    font-size: 1.15rem;
+  }
+}
+
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+/* Styles for a full-width split layout */
+@media (min-width: 960px) {
+  .full-width-split {
+    display: flex;
+  }
+}
+.full-width-split__one {
+  flex: 1;
+  padding: 1.6rem 16px;
+}
+@media (min-width: 960px) {
+  .full-width-split__one {
+    padding: 40px;
+  }
+}
+@media (min-width: 960px) {
+  .full-width-split__one .full-width-split__inner {
+    float: right;
+  }
+}
+.full-width-split__two {
+  flex: 1;
+  background-color: #faf0ca;
+  padding: 1.6rem 16px;
+}
+@media (min-width: 960px) {
+  .full-width-split__two {
+    padding: 40px;
+  }
+}
+@media (min-width: 1350px) {
+  .full-width-split__inner {
+    width: 610px;
+  }
+}
+
+/*
+Styles for the blog, services and workshop summary section, which displays information about blogs, services and workshops
+*/
+.event-summary {
+  position: relative;
+  padding-left: 107px;
+  min-height: 77px;
+  padding-bottom: 1px;
+  margin-bottom: 20px;
+  /* Styles for the title link */
+  /* Styles for the date section */
+  /* Styles for the date section on hover */
+  /* Styles for a beige-colored date section */
+  /* Styles for the month text within the date section */
+  /* Styles for the month text within the day section */
+}
+.event-summary__title a {
+  color: #173f58;
+}
+.event-summary__date {
+  text-decoration: none;
+  display: block;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 14px 0 11px 0;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #0d3b66;
+  width: 80px;
+  line-height: 1;
+  transition: opacity 0.33s;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.event-summary__date:hover {
+  opacity: 0.75;
+}
+.event-summary__date--beige {
+  background-color: #f4d35e;
+}
+.event-summary__month {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.event-summary__day {
+  display: block;
+  font-size: 2.02rem;
+  font-weight: 700;
+}
+
+body {
+  color: #333;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #0d3b66;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p,
+ul,
+ol {
+  margin: 0 0 1.65em 0;
+}
+
+p,
+li {
+  line-height: 1.65;
+}
+
+.page-links {
+  position: relative;
+  z-index: 1;
+  background-color: #faf0ca;
+  margin: 0 0 40px 0;
+}
+@media (min-width: 767px) {
+  .page-links {
+    margin: 0 0 40px 20px;
+    width: 300px;
+    float: right;
+  }
+}
+.page-links__title {
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #0d3b66;
+  color: #fff;
+}
+.page-links__title a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #0d3b66;
+}
+.page-links li {
+  border-top: 1px solid #f4de89;
+}
+.page-links li:first-child {
+  border-top: none;
+}
+.page-links__active, .page-links .current_page_item {
+  text-align: center;
+  background-color: #f4e6b1;
+  color: #0d3b66;
+  font-weight: bold;
+}
+.page-links li a {
+  display: block;
+  text-align: center;
+  padding: 17px 10px;
+  text-decoration: none;
+  color: #0d3b66;
+  transition: all 0.3s;
+}
+.page-links li a:hover {
+  color: #0a2b4b;
+  background-color: #f2e3aa;
+}
+
+/* Defines the style for a map container element */
+.acf-map {
+  /* Set the width of the map container to 100% of its parent element */
+  width: 100%;
+  /* Set the height of the map container to 400 pixels */
+  height: 400px;
+  /* Add a 1-pixel solid border with the color #ccc to the map container */
+  border: #ccc solid 1px;
+  /* Add a 20-pixel margin to the top and bottom of the map container */
+  margin: 20px 0;
+}
+
+/* Fixes potential theme css conflict */
+.acf-map img {
+  /* Set the maximum width of the images within the map container to inherit from their parent element (rather than being limited by their own width) and override any other CSS styles that might be affecting it */
+  max-width: inherit !important;
+}
+
+.link-list li {
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  border-bottom: 1px dotted #dedede;
+}
+.search-overlay .link-list li {
+  font-size: 1.3rem;
+}
+.link-list li:last-child {
+  border-bottom: none;
+}
+.link-list a {
+  color: #f95738;
+}
+
+/* Importing variable.scss for access to variable values */
+/* Style for metabox container */
+.metabox {
+  /* Setting background color to beige */
+  background-color: #faf0ca;
+  /* Adding border radius of 3px */
+  border-radius: 3px;
+  /* Adding padding of 10px on top and bottom and 15px on left and right */
+  padding: 10px 15px;
+  /* Displaying as inline-block */
+  display: inline-block;
+  /* Adding margin at bottom of 30px */
+  margin-bottom: 30px;
+  /* Adding box shadow with 2px horizontal and vertical offset, 1px blur radius and 0.07 alpha value */
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.07);
+  /* Style for metabox container with --position-up modifier */
+  /* Style for metabox container with --with-home-link modifier */
+  /* Style for main content area of metabox container */
+  /* Style for paragraphs inside metabox */
+  /* Style for links inside metabox */
+  /* Style for links inside metabox on hover */
+  /* Style for blog home link inside metabox */
+  /* Style for blog home link inside metabox on hover */
+}
+.metabox--position-up {
+  /* Positioning at top of parent element */
+  position: absolute;
+  /* Setting top value to 0 */
+  top: 0;
+  /* Translating element up by 50% of its own height */
+  transform: translateY(-50%);
+}
+.metabox--with-home-link {
+  /* Removing padding */
+  padding: 0;
+}
+.metabox__main {
+  /* Adding padding of 10px on top, 15px on right and left, and 11px on bottom */
+  padding: 10px 15px 10px 11px;
+}
+.metabox p {
+  /* Removing margin */
+  margin: 0;
+  /* Setting font size to 0.9rem */
+  font-size: 0.875rem;
+  /* Setting color to a shade of beige with decreased lightness and saturation values */
+  color: #a79038;
+}
+.metabox a {
+  /* Setting color to a shade of beige with decreased lightness and saturation values */
+  color: #a79038;
+  /* Removing underline from links */
+  text-decoration: none;
+  /* Setting font weight to bold */
+  font-weight: bold;
+}
+.metabox a:hover {
+  /* Adding underline on hover */
+  text-decoration: underline;
+}
+.metabox .metabox__blog-home-link {
+  /* Setting background color to main blue */
+  background-color: #0d3b66;
+  /* Setting text color to white */
+  color: #fff;
+  /* Displaying as inline-block */
+  display: inline-block;
+  /* Adding padding of 10px on top and bottom and 15px on left and right */
+  padding: 10px 15px;
+  /* Adding border radius of 3px on top left and bottom left corners */
+  border-radius: 3px 0 0 3px;
+  /* Setting font weight to normal */
+  font-weight: normal;
+}
+.metabox .metabox__blog-home-link:hover {
+  /* Removing underline on hover */
+  text-decoration: none;
+  /* Darkening background color on hover */
+  background-color: #0a2e4f;
+}
+
+/* Styling for individual post items in a list */
+.post-item {
+  border-bottom: 1px dotted #dedede;
+  padding-bottom: 1.7rem;
+  margin-bottom: 1.7rem;
+  /* Remove border and margin on last item to avoid extra spacing */
+}
+.post-item:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+}/*# sourceMappingURL=style.css.map */

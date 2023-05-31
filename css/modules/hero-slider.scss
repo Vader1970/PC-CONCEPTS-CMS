@@ -1,0 +1,132 @@
+// Import baseline styles from base/baseline.scss
+@import "../base/baseline.scss";
+
+// Styles for hero slider section
+.hero-slider {
+  // Set position to relative and add top margin of 20px
+  position: relative;
+  margin-top: 20px;
+
+  // Styles for child div elements
+  div {
+    // Remove outline from divs
+    outline: none;
+  }
+
+  // Styles for interior container element
+  &__interior {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    // Responsive styles for medium screen sizes
+    @include atMedium {
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
+  }
+
+  // Styles for individual slider slide element
+  &__slide {
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  // Styles for overlay element
+  &__overlay {
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.68);
+    padding: 40px;
+    color: #fff;
+    // Responsive styles for medium screen sizes
+    @include atMedium {
+      width: 50%;
+    }
+  }
+}
+
+// Styles for slider dots
+.slick-dots {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  top: 15px;
+  // Responsive styles for medium screen sizes
+  @include atMedium {
+    top: 50px;
+  }
+}
+
+// Styles for individual slider dots
+.slick-dots {
+  li {
+    list-style: none;
+    display: inline;
+  }
+
+  li button {
+    display: inline-block;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    border: none;
+    margin: 0 4px;
+    padding: 0;
+    outline: none;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+  }
+
+  // Styles for active slider dot
+  .slick-active button {
+    background-color: #fff;
+  }
+}
+
+/* GlideJS */
+// Styles for bullet container element
+.glide__bullets {
+  z-index: 100;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  top: 15px;
+  // Responsive styles for medium screen sizes
+  @include atMedium {
+    top: 50px;
+  }
+
+  // Styles for individual bullet button
+  button {
+    display: inline-block;
+    text-indent: -9999px;
+    font-size: 0;
+    line-height: 0;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 50%;
+    border: none;
+    margin: 0 3px;
+    padding: 0;
+    outline: none;
+    transition: background-color 0.3s ease-out;
+    cursor: pointer;
+  }
+
+  button.glide__bullet--active {
+    background-color: #fff;
+  }
+}

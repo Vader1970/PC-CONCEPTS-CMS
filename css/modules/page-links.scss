@@ -1,0 +1,70 @@
+// Importing variable and baseline stylesheets
+@import "../base/variables.scss";
+@import "../base/baseline.scss";
+
+// Styles for a page links component
+.page-links {
+  // Ensure the component has a higher z-index than the page-banner
+  position: relative;
+  z-index: 1;
+  background-color: $beige;
+  margin: 0 0 40px 0;
+  @include atSmallMedium {
+    margin: 0 0 40px 20px;
+    // On small and medium screens, float the component to the right and set a width of 300px
+    width: 300px;
+    float: right;
+  }
+
+  // Styles for the component title
+  &__title {
+    margin: 0;
+    font-weight: normal;
+    text-align: center;
+    padding: 20px 0;
+    background-color: $mainBlue;
+    color: #fff;
+
+    // Styles for the title link
+    a {
+      color: #fff;
+      text-decoration: none;
+      background-color: $mainBlue;
+    }
+  }
+
+  // Styles for each list item in the component
+  li {
+    border-top: 1px solid adjust-color($beige, $lightness: -14%);
+  }
+
+  // Remove the top border from the first list item
+  li:first-child {
+    border-top: none;
+  }
+
+  // Styles for the active and current page items
+  &__active,
+  & .current_page_item {
+    text-align: center;
+    background-color: scale-color($beige, $lightness: -7%, $saturation: -10%);
+    color: $mainBlue;
+    font-weight: bold;
+  }
+
+  // Styles for each link in the component
+  li a {
+    display: block;
+    text-align: center;
+    padding: 17px 10px;
+    text-decoration: none;
+    color: $mainBlue;
+    transition: all 0.3s;
+  }
+
+  // Styles for a link on hover
+  li a:hover {
+    color: adjust-color($mainBlue, $lightness: -6%);
+    background-color: scale-color($beige, $lightness: -9%, $saturation: -12%);
+  }
+}

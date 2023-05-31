@@ -1,0 +1,23 @@
+// Import variables from the variables.scss file
+@import "../base/variables.scss";
+
+// Define styles for a group of service cards
+.service-cards {
+  // Use flexbox to arrange service cards in a column
+  display: flex;
+  flex-direction: column;
+  // Add margin to the bottom of the service card group
+  margin-bottom: 40px;
+  // Remove padding from the service card group
+  padding: 0;
+  // Align service cards to the center of the container
+  align-items: center;
+}
+
+// Define styles for service card images
+.service-image {
+  // Remove margin from service card images
+  margin: 0;
+  // Remove padding from service card images
+  padding: 0;
+}

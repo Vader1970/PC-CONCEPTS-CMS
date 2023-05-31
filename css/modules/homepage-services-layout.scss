@@ -1,0 +1,37 @@
+.homepage-services-layout {
+  /* Uses the grid display property */
+  display: grid;
+  /* Sets 2 columns with equal width */
+  grid-template-columns: repeat(2, 1fr);
+  /* Automatically sizes rows based on content */
+  grid-template-rows: auto;
+  /* Limits the maximum width of the grid */
+  max-width: 1200px;
+  /* Centers the grid horizontally within its container */
+  margin-inline: auto;
+  /* Adds a 2-rem gap between grid items */
+  gap: 2rem;
+
+  /* New styles for 3D effect */
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.homepage-services-layout > * {
+  /* Apply 3D effect to each grid item */
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+  padding: 10px;
+  box-sizing: border-box;
+  transform: translateZ(30px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  /* Switches to a single column layout */
+  .homepage-services-layout {
+    grid-template-columns: 1fr;
+    /* Automatically sizes rows based on content */
+    grid-template-rows: auto;
+  }
+}

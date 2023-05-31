@@ -1,0 +1,62 @@
+// Import variables from base directory
+@import "../base/variables.scss";
+
+/*
+Styles for the blog, services and workshop summary section, which displays information about blogs, services and workshops
+*/
+.event-summary {
+  position: relative;
+  padding-left: 107px;
+  min-height: 77px;
+  padding-bottom: 1px;
+  margin-bottom: 20px;
+
+  /* Styles for the title link */
+  &__title a {
+    color: #173f58;
+  }
+
+  /* Styles for the date section */
+  &__date {
+    text-decoration: none;
+    display: block;
+    top: 0;
+    left: 0;
+    position: absolute;
+    padding: 14px 0 11px 0;
+    color: #fff;
+    border-radius: 50%;
+    background-color: $mainBlue;
+    width: 80px;
+    line-height: 1;
+    transition: opacity 0.33s;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.22);
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  /* Styles for the date section on hover */
+  &__date:hover {
+    opacity: 0.75;
+  }
+
+  /* Styles for a beige-colored date section */
+  &__date--beige {
+    background-color: $mainYellow;
+  }
+
+  /* Styles for the month text within the date section */
+  &__month {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+  }
+
+  /* Styles for the month text within the day section */
+  &__day {
+    display: block;
+    font-size: 2.02rem;
+    font-weight: 700;
+  }
+}

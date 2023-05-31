@@ -1,0 +1,43 @@
+// Import baseline styles
+@import "../base/baseline.scss";
+
+/* Styles for a full-width split layout */
+.full-width-split {
+  // Use flexbox display on medium-sized screens and above
+  @include atMedium {
+    display: flex;
+  }
+
+  // Styles for the first column
+  &__one {
+    flex: 1;
+    padding: 1.6rem 16px;
+    @include atMedium {
+      padding: 40px;
+    }
+
+    // Styles for an inner element of the first column
+    .full-width-split__inner {
+      @include atMedium {
+        float: right;
+      }
+    }
+  }
+
+  // Styles for the second column
+  &__two {
+    flex: 1;
+    background-color: $beige;
+    padding: 1.6rem 16px;
+    @include atMedium {
+      padding: 40px;
+    }
+  }
+
+  // Styles for an inner element of the full-width split element
+  &__inner {
+    @media (min-width: 1350px) {
+      width: 610px;
+    }
+  }
+}
