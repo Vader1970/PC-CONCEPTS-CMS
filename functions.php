@@ -65,7 +65,7 @@ function pageBanner($args = NULL)
 function pc_concepts_files()
 {
     // enqueue Google Maps API
-    wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=AIzaSyABcbC2p5eGsmXmebTSFq77PvbmOG0e9-Q', NULL, '1.0', true);
+    wp_enqueue_script('googleMap', '//maps.googleapis.com/maps/api/js?key=, NULL, '1.0', true);
 
     // enqueue main JavaScript file
     wp_enqueue_script('main-pc-concepts-js', get_theme_file_uri('/build/index.js'), array('jquery'), '1.0', true);
