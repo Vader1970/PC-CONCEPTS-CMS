@@ -162,7 +162,7 @@ add_action('pre_get_posts', 'pc_concepts_adjust_queries');
 // Set API key for Google Maps
 function pcconceptMapKey($api)
 {
-    $api['key'] = 'AIzaSyABcbC2p5eGsmXmebTSFq77PvbmOG0e9-Q';
+    $api['key'] = '';
     return $api;
 }
 
