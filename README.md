@@ -47,3 +47,35 @@ Training documentation file or link
 A separate text document on compatibility and acceptance testing results 
 Online portfolio 
 Hand-in files are zipped together and uploaded to the submission point.
+
+**ASSESSOR FEEDBACK**
+ comments	
+Hi Dan 
+
+Well Done on your submission - All the requirements were met. I have left some additional feedback in your rubric but overall an outstanding submission. 
+
+It's been a pleasure marking your assessments & wish you the very best for your future adventures. Hope to see you support many organizations throughout a digital transformation.  
+
+Many Thanks 
+
+
+
+Ezra Chinappa 
+
+
+
+Online Assessor 
+
+**RUBRIC COMMENTS**
+
+Excellent commentary and discrepancy here on the details. Language and Visual elements covers a broad range of diversity. Great Work Here.
+Outstanding work here - Excellent selections from a design perspective alongside your overall justification on all of your elements selected.
+Excellent work - All plugins are aligned with your objectives and evident is improving the overall UX.
+Outstanding documentation - detailed and simple to follow which is difficult to nail - Great work.
+Great work - Understanding the overall Site is a good overview of your client and its difficult other than booking times and contact us as any further feature functionality you can add. Overall in terms of the overall objectives - evident the required functionality is presented here.
+Outstanding work again - Justified your recommendation of using Hostinger - aligns perfectly with your requirements and objectives.
+Excellent Viewport testing!
+Outstanding Work here - great collection of data from end users.
+Excellent scope - although not much data in terms of testing results but overall strategy is outstanding.
+Robust and simple contract noted here - great work.
+Very Slick Portfolio - Very Bright future ahead and have no doubts you will be an invaluable addition to any Org.
